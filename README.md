@@ -62,15 +62,13 @@ Contributions, corrections, and source references are welcome. Please open an is
 
 ## 📚 Sources & References
 
-
-
 - 
 - 
 - 
 
 _______________________________________________________________________________________________________________________________________
 
-> Specify your license here (e.g., MIT, or "Content for educational/dawah purposes only — not for commercial redistribution").
+
 
 ## 🙏 Acknowledgments
 
