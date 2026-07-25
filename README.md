@@ -47,7 +47,7 @@ ________________________________________________________________________________
 This project uses **WOW.js** with **Animate.css** to trigger animations on scroll. Example usage:
 
 ```html
-<div class="wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+<div class="wow fadeInUp" data-wow-delay="0.3s">
   <!-- content -->
 </div>
 ```
