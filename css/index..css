@@ -1,0 +1,168 @@
+body {
+    background-color: #efead7;
+}
+
+
+
+/* ! header section start*/
+header {
+    background: url(../assets/imgs/header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+}
+
+
+/* ! hero section start */
+.hero-content-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    margin-top: 40px;
+}
+
+
+
+
+.hero-l {
+
+    width: 48%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    animation-duration: 1.3s;
+}
+
+.hero-l h3 {
+    color: var(--main-color);
+    font-family: var(--headline-font);
+    font-size: 39px;
+}
+
+.hero-l p {
+    color: var(--tertiary-color);
+    font-size: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+
+
+.hero-l-button {
+
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.hero-l-button a {
+    text-decoration: none;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.hero-l-button a:nth-of-type(1) {
+    background-color: #7e642c;
+    color: var(--neutral-color);
+    color: var(--neutral-color);
+}
+
+.hero-l-button a:nth-of-type(2) {
+    background-color: transparent;
+    outline: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+
+
+.hero-r {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 610px;
+    animation-duration: 1.3s;
+
+}
+
+
+.hero-r img {
+    width: 80%;
+    border-radius: 30px;
+    margin: 10px 0px;
+}
+
+
+@media only screen and (max-width:850px){
+    nav a{
+        /* todo remove this line after hidden the nav a */
+        display: none;
+    }
+
+
+    .hero-content-home {
+        flex-direction: column;
+    }
+    .hero-l , .hero-r{
+        width: 90%;
+    }
+    .hero-r{
+        flex-direction: row;
+        height: 300px;
+        justify-content: space-around;
+    }
+    .hero-r img{
+        width: 40%;
+        height: 200px;
+    }
+    
+}
+
+@media only screen and (max-width:500px){
+    nav a{
+        /* todo remove this line after hidden the nav a */
+        display: none;
+    }
+    .hero-l h3{
+        font-size: 25px;
+    }
+
+    .hero-l p{
+        font-size: 18px;
+    }
+
+    .hero-l-button a{
+        font-size: 14px;
+    }
+
+
+    .hero-r{
+        flex-direction: column;
+        height: 400px;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .hero-r img{
+        width: 90%;
+        height: 200px;
+    }
+
+
+
+}
+
+
+
+/* ? hero section end */
+/* ? header section end */

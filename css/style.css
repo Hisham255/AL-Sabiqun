@@ -18,6 +18,11 @@ a , button{
     text-transform: uppercase;
 }
 
+.ayah{
+    direction: rtl;         
+    font-family: 'Amiri', 'Traditional Arabic', serif; 
+}
+
 
 
 
@@ -49,7 +54,7 @@ a , button{
     flex-direction: row;
     justify-content: space-around;
     
-    width: 40%;
+    width: 50%;
 }
 
 .nav-list a{
