@@ -40,13 +40,10 @@ header {
 }
 
 .hero-l h3 {
-    color: var(--main-color);
-    font-family: var(--headline-font);
     font-size: 39px;
 }
 
 .hero-l p {
-    color: var(--tertiary-color);
     font-size: 20px;
     width: 90%;
     text-align: center;
@@ -104,65 +101,181 @@ header {
 }
 
 
-@media only screen and (max-width:850px){
-    nav a{
+@media only screen and (max-width:850px) {
+    nav a {
         /* todo remove this line after hidden the nav a */
         display: none;
     }
-
-
+    
+    
     .hero-content-home {
         flex-direction: column;
     }
-    .hero-l , .hero-r{
-        width: 90%;
+    
+    .hero-l,
+    .hero-r {
+        width: 80%;
     }
-    .hero-r{
+    
+    .hero-r {
         flex-direction: row;
         height: 300px;
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    .hero-r img{
-        width: 40%;
+    
+    .hero-r img {
+        width: 47%;
         height: 200px;
     }
     
 }
 
-@media only screen and (max-width:500px){
-    nav a{
+@media only screen and (max-width:650px) {
+    nav a {
         /* todo remove this line after hidden the nav a */
         display: none;
     }
-    .hero-l h3{
+    
+    .hero-l h3 {
         font-size: 25px;
     }
-
-    .hero-l p{
+    
+    .hero-l p {
         font-size: 18px;
     }
-
-    .hero-l-button a{
+    
+    .hero-l-button a {
         font-size: 14px;
     }
-
-
-    .hero-r{
+    
+    
+    .hero-r {
         flex-direction: column;
-        height: 400px;
+        height: 500px;
         justify-content: space-around;
         margin-top: 20px;
     }
-    .hero-r img{
+    
+    .hero-r img {
         width: 90%;
         height: 200px;
     }
-
-
-
+    
+    
+    
 }
 
 
 
 /* ? hero section end */
 /* ? header section end */
+
+/* ! main section start */
+/* ! main information section start */
+.container-info{
+    
+    background-color: #d1c2a1c4;
+}
+
+.main-info{
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-info article{
+    
+    width: 300px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-info article h5 {
+    font-size: 30px;
+}
+
+.main-info article p {
+    font-size: 22px;
+    text-align: center;
+}
+
+@media only screen and (max-width:850px) {
+    .main-info article h5 {
+        font-size: 20px;
+    }
+    
+    .main-info article p {
+        font-size: 18px;
+    }
+}
+
+/* ? main information section end */
+
+/* ! about the islam section start */
+.about-islam{
+    background-color: #efead7;
+    padding: 80px 0px;
+}
+
+.about-islam article{
+    background-color:var(--neutral-color);
+    width: 90%;
+    padding: 50px 10px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 30px;
+    border-top: solid var(--main-color) 3px;
+    border-bottom: solid var(--main-color) 2px;
+}
+
+.about-islam article img{
+    width: 250px;
+    height: fit-content;
+}
+
+.about-islam-message{
+    width: 70%;
+}
+
+.about-islam-message h3{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about-islam-message p{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:992px) {
+    .about-islam-message h3{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .about-islam-message p{
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .about-islam article{
+        flex-direction: column ;
+        width: 80%;
+    }
+    
+    .about-islam-message{
+        width: 80%;
+        margin-top: 20px;
+    }
+    
+}   
+/* ? about the islam section end */
+
+/* ? main section end */

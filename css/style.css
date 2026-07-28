@@ -9,18 +9,49 @@
     --tertiary-color: #2D3E35;
     --neutral-color: #FBF8F2;
     --headline-font: monospace;
-    --body-font:  "Playfair Display", serif;
+    --body-font: "Playfair Display", serif;
 
 }
 
 
-a , button{
+a,
+button {
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.ayah{
-    direction: rtl;         
-    font-family: 'Amiri', 'Traditional Arabic', serif; 
+body{
+    font-family: var(--body-font);
+}
+
+
+.ayah {
+    direction: rtl;
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+}
+
+.main-color{
+    color: var(--main-color);
+}
+
+.sec-color{
+    color: var(--secondary-color);
+}
+
+.thi-color{
+    color: var(--tertiary-color);
+}
+
+.last-color{
+    color: var(--neutral-color);
+}
+
+.head-font{
+    font-family: var(--headline-font);
+}
+
+.up-letters{
+    text-transform: uppercase   ;
 }
 
 
@@ -39,11 +70,11 @@ a , button{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 #logo img {
-    width: 130px;   
+    width: 130px;
 }
 
 
@@ -53,19 +84,16 @@ a , button{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
     width: 50%;
 }
 
-.nav-list a{
-    text-decoration: none;
-    font-family: var(--headline-font);
+.nav-list a {
     font-size: 18px;
-    color: var(--neutral-color);
     padding: 2px;
 }
 
-.nav-list a:hover{
+.nav-list a:hover {
     border-bottom: solid 3px var(--secondary-color);
     color: var(--secondary-color);
 }
@@ -76,34 +104,9 @@ a , button{
     background: none;
     border: none;
     outline: none;
-    color: var(--neutral-color);
 }
 
 
 
 
 /* todo navbar global end  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
