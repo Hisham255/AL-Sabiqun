@@ -146,7 +146,10 @@ header {
     
     .hero-l-button a {
         font-size: 14px;
+        padding: 10px 15px;
+        
     }
+
     
     
     .hero-r {
@@ -161,6 +164,7 @@ header {
         height: 200px;
     }
     
+
     
     
 }
@@ -173,8 +177,8 @@ header {
 /* ! main section start */
 /* ! main information section start */
 .container-info{
+    background:linear-gradient(#efead7,#cbbda0c4 , #efead7) ;
     
-    background-color: #d1c2a1c4;
 }
 
 .main-info{
@@ -204,12 +208,17 @@ header {
 }
 
 @media only screen and (max-width:850px) {
+    .main-info{
+        padding: 20px 0;
+    }
+
     .main-info article h5 {
-        font-size: 20px;
+        font-size: 17px;
+    
     }
     
     .main-info article p {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -277,5 +286,157 @@ header {
     
 }   
 /* ? about the islam section end */
+
+/* ! glimpse section start  */
+
+.background-glimpse {
+    
+    background: linear-gradient(to bottom , #efe8d7 10% , var(--neutral-color) 20%);
+}
+
+.glimpse-section{
+    
+    display: flex;
+    justify-content: space-around   ;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+.glimpse-section img{
+    width: 20%;
+    border-radius: 30px;
+    outline: solid var(--main-color) 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.glimpse-p{
+    width: 60%;
+    
+}
+.glimpse-p h2{
+    text-transform: capitalize;
+    background-color: var(--secondary-color);
+    padding: 3px 15px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.glimpse-p h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.glimpse-p p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.glimpse-p a{
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+@media only screen and (max-width:1000px){
+    .glimpse-section{
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: auto;
+        position: relative;
+    }
+    
+    .glimpse-section img{
+        width: 100%;
+        
+        
+    }
+    .glimpse-p{
+        position: absolute;
+        left: 0%;
+        top: calc(0% + 40px);
+        bottom: calc(0% + 40px);
+        border-radius: 30px 0px 0px 30px;
+        background-color: rgba(81, 81, 81, 0.811);
+        padding: 10px;
+        width: calc(50% - 20px);
+        overflow: auto;
+        scrollbar-width: none;
+        
+    }
+
+    .glimpse-p h2{
+        background-color: var(--main-color);
+        color: var(--secondary-color);
+        font-size: 16px;
+        
+    }
+    
+    .glimpse-p h3{
+        color: var(--secondary-color);
+        font-size: 25px;
+    }
+
+
+    .glimpse-p p{
+        color: var(--neutral-color);
+        font-size: 17px;
+        
+        width: 90%;
+    }
+
+    .glimpse-p a{
+        background-color: var(--neutral-color);
+        border-radius: 20px;
+    }
+
+}
+
+@media only screen and (max-width:700px){
+    .glimpse-p h2 {
+        font-size: 15px;
+    }
+
+    .glimpse-p h3{
+        font-size: 20px;
+    }
+
+    .glimpse-p p{
+        font-size: 14px;
+    }
+
+    .glimpse-p a{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:580px){
+
+    .glimpse-section{
+        padding: 20px 0px;
+        width: 85%;
+    }
+
+    .glimpse-p{
+        position: absolute;
+        left: 0%;
+        top: calc(0% + 20px);
+        bottom: calc(0% + 20px);
+        border-radius: 30px ;
+        background-color: rgba(81, 81, 81, 0.811);
+        padding: 10px;
+        width: calc(100% - 20px);
+        overflow: auto;
+        scrollbar-width: none;
+        
+    }
+
+}
+
+
+/* ? glimpse section end  */
 
 /* ? main section end */
