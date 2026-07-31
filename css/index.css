@@ -102,71 +102,64 @@ header {
 
 
 @media only screen and (max-width:850px) {
-    nav a {
-        /* todo remove this line after hidden the nav a */
-        display: none;
-    }
-    
-    
+
+
+
     .hero-content-home {
         flex-direction: column;
     }
-    
+
     .hero-l,
     .hero-r {
         width: 80%;
     }
-    
+
     .hero-r {
         flex-direction: row;
         height: 300px;
         justify-content: space-between;
     }
-    
+
     .hero-r img {
         width: 47%;
         height: 200px;
     }
-    
+
 }
 
 @media only screen and (max-width:650px) {
-    nav a {
-        /* todo remove this line after hidden the nav a */
-        display: none;
-    }
-    
+
     .hero-l h3 {
         font-size: 25px;
     }
-    
+
     .hero-l p {
         font-size: 18px;
     }
-    
+
     .hero-l-button a {
         font-size: 14px;
         padding: 10px 15px;
-        
+
     }
 
-    
-    
+
+
     .hero-r {
         flex-direction: column;
         height: 500px;
         justify-content: space-around;
         margin-top: 20px;
     }
-    
+
     .hero-r img {
         width: 90%;
         height: 200px;
     }
-    
 
-    
-    
+
+
+
 }
 
 
@@ -176,20 +169,21 @@ header {
 
 /* ! main section start */
 /* ! main information section start */
-.container-info{
-    background:linear-gradient(#efead7,#cbbda0c4 , #efead7) ;
-    
+.container-info {
+    background: linear-gradient(#efead7, #cbbda0c4, #efead7);
+
+
 }
 
-.main-info{
+.main-info {
     padding: 50px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.main-info article{
-    
+.main-info article {
+
     width: 300px;
     height: 150px;
     display: flex;
@@ -208,15 +202,15 @@ header {
 }
 
 @media only screen and (max-width:850px) {
-    .main-info{
+    .main-info {
         padding: 20px 0;
     }
 
     .main-info article h5 {
         font-size: 17px;
-    
+
     }
-    
+
     .main-info article p {
         font-size: 15px;
     }
@@ -225,13 +219,13 @@ header {
 /* ? main information section end */
 
 /* ! about the islam section start */
-.about-islam{
+.about-islam {
     background-color: #efead7;
     padding: 80px 0px;
 }
 
-.about-islam article{
-    background-color:var(--neutral-color);
+.about-islam article {
+    background-color: var(--neutral-color);
     width: 90%;
     padding: 50px 10px;
     margin: 0px auto;
@@ -244,65 +238,66 @@ header {
     border-bottom: solid var(--main-color) 2px;
 }
 
-.about-islam article img{
+.about-islam article img {
     width: 250px;
     height: fit-content;
 }
 
-.about-islam-message{
+.about-islam-message {
     width: 70%;
 }
 
-.about-islam-message h3{
+.about-islam-message h3 {
     font-size: 30px;
     margin-bottom: 30px;
 }
 
-.about-islam-message p{
+.about-islam-message p {
     font-size: 20px;
 }
 
 @media only screen and (max-width:992px) {
-    .about-islam-message h3{
+    .about-islam-message h3 {
         font-size: 25px;
         margin-bottom: 30px;
     }
-    
-    .about-islam-message p{
+
+    .about-islam-message p {
         font-size: 17px;
     }
 }
 
 @media only screen and (max-width:600px) {
-    .about-islam article{
-        flex-direction: column ;
+    .about-islam article {
+        flex-direction: column;
         width: 80%;
     }
-    
-    .about-islam-message{
+
+    .about-islam-message {
         width: 80%;
         margin-top: 20px;
     }
-    
-}   
+
+}
+
 /* ? about the islam section end */
 
 /* ! glimpse section start  */
 
 .background-glimpse {
-    
-    background: linear-gradient(to bottom , #efe8d7 10% , var(--neutral-color) 20%);
+
+    background: linear-gradient(to bottom, #efe8d7 10%, var(--neutral-color) 20%);
 }
 
-.glimpse-section{
-    
+.glimpse-section {
+
     display: flex;
-    justify-content: space-around   ;
+    justify-content: space-around;
     align-items: center;
     padding: 40px 0px;
 }
 
-.glimpse-section img{
+.glimpse-section img {
     width: 20%;
     border-radius: 30px;
     outline: solid var(--main-color) 1px;
@@ -311,11 +306,12 @@ header {
 
 
 
-.glimpse-p{
+.glimpse-p {
     width: 60%;
-    
+
 }
-.glimpse-p h2{
+
+.glimpse-p h2 {
     text-transform: capitalize;
     background-color: var(--secondary-color);
     padding: 3px 15px;
@@ -325,36 +321,40 @@ header {
     margin-bottom: 20px;
     font-size: 18px;
 }
-.glimpse-p h3{
+
+.glimpse-p h3 {
     font-size: 30px;
     letter-spacing: 1px;
     margin-bottom: 20px;
 }
-.glimpse-p p{
+
+.glimpse-p p {
     font-size: 18px;
     margin-bottom: 20px;
 }
-.glimpse-p a{
+
+.glimpse-p a {
     font-size: 15px;
     padding: 5px;
 }
 
 
-@media only screen and (max-width:1000px){
-    .glimpse-section{
+@media only screen and (max-width:1000px) {
+    .glimpse-section {
         justify-content: center;
         align-items: center;
         width: 70%;
         margin: auto;
         position: relative;
     }
-    
-    .glimpse-section img{
+
+    .glimpse-section img {
         width: 100%;
-        
-        
+
+
     }
-    .glimpse-p{
+
+    .glimpse-p {
         position: absolute;
         left: 0%;
         top: calc(0% + 40px);
@@ -365,73 +365,73 @@ header {
         width: calc(50% - 20px);
         overflow: auto;
         scrollbar-width: none;
-        
+
     }
 
-    .glimpse-p h2{
+    .glimpse-p h2 {
         background-color: var(--main-color);
         color: var(--secondary-color);
         font-size: 16px;
-        
+
     }
-    
-    .glimpse-p h3{
+
+    .glimpse-p h3 {
         color: var(--secondary-color);
         font-size: 25px;
     }
 
 
-    .glimpse-p p{
+    .glimpse-p p {
         color: var(--neutral-color);
         font-size: 17px;
-        
+
         width: 90%;
     }
 
-    .glimpse-p a{
+    .glimpse-p a {
         background-color: var(--neutral-color);
         border-radius: 20px;
     }
 
 }
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:700px) {
     .glimpse-p h2 {
         font-size: 15px;
     }
 
-    .glimpse-p h3{
+    .glimpse-p h3 {
         font-size: 20px;
     }
 
-    .glimpse-p p{
+    .glimpse-p p {
         font-size: 14px;
     }
 
-    .glimpse-p a{
+    .glimpse-p a {
         font-size: 12px;
     }
 }
 
-@media only screen and (max-width:580px){
+@media only screen and (max-width:580px) {
 
-    .glimpse-section{
+    .glimpse-section {
         padding: 20px 0px;
         width: 85%;
     }
 
-    .glimpse-p{
+    .glimpse-p {
         position: absolute;
         left: 0%;
         top: calc(0% + 20px);
         bottom: calc(0% + 20px);
-        border-radius: 30px ;
+        border-radius: 30px;
         background-color: rgba(81, 81, 81, 0.811);
         padding: 10px;
         width: calc(100% - 20px);
         overflow: auto;
         scrollbar-width: none;
-        
+
     }
 
 }
@@ -439,4 +439,122 @@ header {
 
 /* ? glimpse section end  */
 
+/* ! explore section start */
+
+.background-explore {
+    padding: 40px 0px;
+    background: linear-gradient(to bottom, var(--neutral-color) 10%, #efe8d7 20%);
+}
+
+.explore-section {
+    padding: 20px 40px;
+}
+
+.explore-section h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.explore-section hr {
+    height: 2px;
+    width: 80px;
+    margin: auto;
+    background-color: var(--secondary-color);
+    margin-bottom: 50px;
+}
+
+.explore-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+
+.explore-cards a {
+    width: fit-content;
+    height: fit-content;
+
+}
+
+.explore-cards a:nth-of-type(1) {
+    animation-duration: 1s;
+}
+
+.explore-cards a:nth-of-type(2) {
+    animation-duration: 1.7s;
+}
+
+.explore-cards a:nth-of-type(3) {
+    animation-duration: 2.4s;
+}
+
+.explore-cards a:nth-of-type(4) {
+    animation-duration: 3.1s;
+}
+
+.explore-cards article {
+    background-color: var(--neutral-color);
+    padding: 40px;
+    height: 170px;
+    width: 200px;
+    border: solid 1px var(--main-color);
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.explore-cards article h3 {
+    margin: 20px 0px;
+}
+
+.explore-cards article p {
+    text-transform: none;
+}
+
+@media only screen and (max-width:1300px) {
+    .explore-cards article {
+        padding: 20px;
+        height: 130px;
+        width: 160px;
+
+    }
+
+    .explore-cards article h3 {
+        font-size: 16px;
+    }
+
+    .explore-cards article p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .explore-cards article {
+        padding: 20px;
+        height: 170px;
+        width: 200px;
+
+    }
+
+    .explore-cards a {
+        margin-top: 20px;
+    }
+
+    .explore-cards article h3 {
+        font-size: 18px;
+    }
+
+    .explore-cards article p {
+        font-size: 16px;
+    }
+}
+
+/* ? explore section end */
+
 /* ? main section end */
+
+
