@@ -55,6 +55,25 @@ body {
 }
 
 
+.aos-op {
+    opacity: 0;
+    animation: op 0.8s ease-in normal;
+}
+
+@keyframes op {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 
