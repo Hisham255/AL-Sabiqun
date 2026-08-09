@@ -1,0 +1,39 @@
+====>notes for editing in tha all project.
+
+1-rename it from the seven to AL Sabiqun.
+
+
+
+
+===>work on.
+
+
+
+
+
+
+
+
+
+===>tasks not done yet.
+
+-->finsh the <a> herf.
+
+
+
+
+
+
+
+
+===>finshed tasks.
+
+-->make the navbar responsive to mobile themes.
+-->collaceting data for some sahaba.
+--> in the footer add continer to each <a></a> to resize the cursor space.
+
+
+
+
+
+

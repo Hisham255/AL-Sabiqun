@@ -4,12 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/icon/logo2.png">
     <title>land papge</title>
 
     <!-- ! google fonts cdn start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital@0;1&display=swap"
         rel="stylesheet">
     <!-- ? google fonts cdn end -->
 
@@ -43,14 +45,17 @@
         <nav class="nav-home aos-op " data-aos="fade-down" data-aos-duration="800">
             <a href="index.html" id="logo"><img src="assets/icon/logo_al-sabiqun.png"></a>
             <ul class="nav-list">
-                <li><a href="index.html" class="last-color head-font">Home</a></li>
-                <li><a href="pages/thesabiqun.html" class="last-color head-font">AL Sabiqun</a></li>
-                <li><a href="pages/prophet.html" class="last-color head-font">The Prophet</a></li>
-                <li><a href="pages/about.html" class="last-color head-font">About us</a></li>
-                <li><a href="pages/contact.html" class="last-color head-font">Contact us</a></li>
+                <li><a href="index.html" class="last-color active ">Home</a></li>
+                <li><a href="pages/thesabiqun.html" class="last-color ">AL Sabiqun</a></li>
+                <li><a href="pages/prophet.html" class="last-color ">The Prophet</a></li>
+                <li><a href="pages/about.html" class="last-color ">About us</a></li>
+                <li><a href="pages/contact.html" class="last-color ">Contact us</a></li>
             </ul>
 
-            <button class="nav-button last-color"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+            <div class="nav-btn">
+                <button class="nav-button last-color"><i class="fa-solid fa-magnifying-glass fa-xl"></i></button>
+                <span class="nav-menu"><i class="fa-solid fa-bars"></i></span>
+            </div>
         </nav>
         <!-- todo nav home section end -->
 
@@ -60,7 +65,7 @@
         <!--todo hero home section start  -->
         <section class="hero-content-home">
             <div class=" hero-l aos-op" data-aos="fade-right">
-                <h3 class="main-color head-font ">Why the sahaba ?<br>What did they do for all this appreciation ?</h3>
+                <h3 class="main-color  ">Why the sahaba ?<br>What did they do for all this appreciation ?</h3>
                 <p class="ayah thi-color">
                     ﴿
                     وَ لسَّـٰبِقُونَ ٱلْأَوَّلُونَ مِنَ ٱلْمُهَـٰجِرِينَ وَٱلْأَنصَارِ وَٱلَّذِينَ ٱتَّبَعُوهُم
@@ -70,8 +75,8 @@
                     ﴾
                 </p>
                 <div class="hero-l-button">
-                    <a href="pages/thesabiqun.html">Explore the sabiqun</a>
-                    <a href="pages/about.html">About us</a>
+                    <a href="pages/thesabiqun.html" class="bun bun-sec">Explore the sabiqun</a>
+                    <a href="pages/about.html" class="bun bun-main-0">About us</a>
                 </div>
             </div>
 
@@ -121,7 +126,7 @@
             <article class="aos-op" data-aos="zoom-in-up">
                 <img src="assets/icon/logo3.png">
                 <div class="about-islam-message">
-                    <h3 class="main-color head-font">About Islam</h3>
+                    <h3 class="main-color ">About Islam</h3>
                     <p>
                         The foundation of Islam is belief in God, the One and Only, and that Muhammad is His Messenger
                         and Prophet.
@@ -174,6 +179,14 @@
 
                 <div class="explore-cards">
 
+                    <a href="pages/prophet.html" class="aos-op" data-aos="fade-up">
+
+                        <article>
+                            <i class="fa-solid fa-book-open main-color fa-2xl"></i>
+                            <h3 class="main-color">The last prophet</h3>
+                            <p class="thi-color">The best human in existence.</p>
+                        </article>
+                    </a>
 
                     <a href="pages/sahaba.html" class="aos-op" data-aos="fade-up">
                         <article>
@@ -195,14 +208,6 @@
 
 
 
-                    <a href="pages/prophet.html" class="aos-op" data-aos="fade-up">
-
-                        <article>
-                            <i class="fa-solid fa-book-open main-color fa-2xl"></i>
-                            <h3 class="main-color">The last prophet</h3>
-                            <p class="thi-color">The best human in existence.</p>
-                        </article>
-                    </a>
 
                     <a href="pages/contact.html" class="aos-op" data-aos="fade-up">
 
@@ -238,16 +243,16 @@
 
             <div class="footer-sections" data-aos="zoom-in">
                 <h3>NAVIGATION</h3>
-                <a href="pages/sahaba.html">All sahaba</a>
-                <a href="pages/prophet.html">The prophet</a>
-                <a href="pages/explore.html">Resources</a>
+                <span><a href="pages/sahaba.html">All sahaba</a></span>
+                <span><a href="pages/prophet.html">The prophet</a></span>
+                <span><a href="pages/explore.html">Resources</a></span>
             </div>
 
             <div class="footer-sections" data-aos="zoom-in">
                 <h3>LEGAL</h3>
-                <a href="pages/explore.html">Privacy Policy</a>
-                <a href="pages/explore.html">Terms of service</a>
-                <a href="pages/explore.html">FAQ</a>
+                <span><a href="pages/explore.html">Privacy Policy</a></span>
+                <span><a href="pages/explore.html">Terms of service</a></span>
+                <span><a href="pages/contact.html#faq-section">FAQ</a></span>
             </div>
 
             <div id="newsletter" data-aos="zoom-in">
@@ -278,7 +283,8 @@
     </script>
     <!-- ? AOS js file end -->
 
-
+    <!-- ! js files  -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>

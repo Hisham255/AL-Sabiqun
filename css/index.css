@@ -1,6 +1,3 @@
-body {
-    background-color: #efead7;
-}
 
 
 
@@ -40,11 +37,13 @@ header {
 }
 
 .hero-l h3 {
-    font-size: 39px;
+    font-size: 32px;
+    font-family: var(--headline-font);
+    
 }
 
 .hero-l p {
-    font-size: 20px;
+    font-size: 18px;
     width: 90%;
     text-align: center;
 }
@@ -60,24 +59,7 @@ header {
     height: 50px;
 }
 
-.hero-l-button a {
-    text-decoration: none;
-    height: fit-content;
-    padding: 15px 20px;
-    border-radius: 8px;
-}
 
-.hero-l-button a:nth-of-type(1) {
-    background-color: #7e642c;
-    color: var(--neutral-color);
-    color: var(--neutral-color);
-}
-
-.hero-l-button a:nth-of-type(2) {
-    background-color: transparent;
-    outline: 2px solid var(--main-color);
-    color: var(--main-color);
-}
 
 
 
@@ -129,6 +111,11 @@ header {
 
 @media only screen and (max-width:650px) {
 
+    .hero-l-button{
+      
+        width: 100%;
+    }
+
     .hero-l h3 {
         font-size: 25px;
     }
@@ -139,7 +126,7 @@ header {
 
     .hero-l-button a {
         font-size: 14px;
-        padding: 10px 15px;
+        padding: 10px 10px;
 
     }
 
@@ -250,6 +237,7 @@ header {
 .about-islam-message h3 {
     font-size: 30px;
     margin-bottom: 30px;
+    font-family: var(--headline-font);
 }
 
 .about-islam-message p {
@@ -535,8 +523,9 @@ header {
 @media only screen and (max-width:950px) {
     .explore-cards article {
         padding: 20px;
-        height: 170px;
-        width: 200px;
+        height: 110px;
+        width: 350px;
+        
 
     }
 

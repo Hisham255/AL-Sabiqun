@@ -1,18 +1,30 @@
 * {
     padding: 0;
     margin: 0;
+    z-index: 1;
 }
 
 :root {
-    --main-color: #1f6f5c;
+    --main-color: #114f41;
+    --main-1-color: #04392e;
     --secondary-color: #C9A24B;
+    --secondary-1-color: #7e642c;
     --tertiary-color: #2D3E35;
     --neutral-color: #FBF8F2;
-    --headline-font: monospace;
+    --neutral-0-color: #eae8e2;
+    --neutral-1-color:#e8e5de;
+    --neutral-2-color:#adaba6;
+    --balck-1-color: #212121;
+    --headline-font: "Inter", sans-serif;
     --body-font: "Playfair Display", serif;
 
 }
 
+
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
 
 a,
 button {
@@ -22,6 +34,7 @@ button {
 
 body {
     font-family: var(--body-font);
+    background-color: #efead7;
 }
 
 
@@ -46,9 +59,6 @@ body {
     color: var(--neutral-color);
 }
 
-.head-font {
-    font-family: var(--headline-font);
-}
 
 .up-letters {
     text-transform: uppercase;
@@ -75,6 +85,52 @@ body {
 }
 
 
+.bun {
+    text-decoration: none;
+    height: fit-content;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.bun-sec {
+    background-color: var(--secondary-1-color);
+    color: var(--neutral-color);
+}
+
+.bun-sec-0 {
+    background-color: transparent;
+    outline: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.bun-main{
+    background-color: var(--main-1-color);
+    color: var(--neutral-color);
+}
+
+.bun-main-0 {
+    background-color: transparent;
+    outline: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.bun-black{
+    background-color: var(--balck-1-color);
+    color: var(--neutral-color);
+}
+
+.bun-black-0 {
+    background-color: transparent;
+    outline: 2px solid var(--balck-1-color);
+    color: var(--balck-1-color);
+}
+
+
+
+
 
 
 
@@ -89,7 +145,9 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    z-index: 2;
 }
 
 #logo img {
@@ -108,8 +166,9 @@ body {
 }
 
 .nav-list a {
-    font-size: 18px;
+    font-size: 15px;
     padding: 2px;
+    font-family: var(--headline-font);
 }
 
 .nav-list a:hover {
@@ -117,20 +176,89 @@ body {
     color: var(--secondary-color);
 }
 
+.nav-list a.active{
+    border-bottom: solid 3px var(--secondary-color);
+    color: var(--secondary-color);
+
+}
+
+
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
 
 
 .nav-button {
     background: none;
     border: none;
     outline: none;
+    cursor: pointer;
+    color: var(--neutral-color);
+}
+
+.nav-menu{
+    color: var(--neutral-color);
+    font-size: 21px;
+    width: 30px;
+    margin: 0 30px;
+    display: none;
+    cursor: pointer;
 }
 
 
 
-@media only screen and (max-width:850px) {
-    nav a {
-        /* todo remove this line after hidden the nav a */
+@media only screen and (max-width:880px) {
+    .nav-list{
         display: none;
+    }
+
+    .nav-home{
+        justify-content: space-between;
+        padding-left:10px ;
+        padding-right: 10px;
+    }
+
+    .nav-list.show-menu{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--neutral-color);
+        position: absolute;
+        width: 200px;
+        top: 70%;
+        right: 12%;
+        border-radius: 4px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        z-index: 3;
+    }
+
+    .nav-list.show-menu a{
+        color: var(--main-color);
+        font-size: 13px;
+        font-weight: 600;
+        display: block;
+        padding: 15px 10px; 
+        width: calc(100% - 20px);
+        border-radius: 4px;
+    }
+
+    
+    .nav-list li:nth-of-type(odd) a{
+        background-color: var(--neutral-color);
+    }
+    .nav-list li:nth-of-type(even) a{
+        background-color: var(--neutral-1-color);
+    }
+    
+    .nav-list a:hover , .nav-list a.active {
+        border-bottom: none;
+        color: #C9A24B;
+    }
+
+
+    .nav-menu{
+        display: block;
     }
 }
 
@@ -169,14 +297,14 @@ footer {
 .footer-sections h3 {
     color: var(--secondary-color);
     font-weight: 400;
-
+    font-family: var(--headline-font);
 }
 
 .footer-sections a {
     color: var(--neutral-color);
     text-transform: none;
     letter-spacing: 1px;
-    word-spacing: 2px;
+    word-spacing: 2px; 
 }
 
 
@@ -186,14 +314,15 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .footer-icon h2 {
     font-weight: 900;
-    font-size: 40px;
+    font-size: 35px;
     font-family: Times, serif;
     letter-spacing: 2px;
-
+    font-family: var(--headline-font);
     margin-top: 10px;
 }
 
@@ -207,7 +336,7 @@ footer {
 #newsletter h3 {
     color: var(--secondary-color);
     font-weight: 400;
-
+    font-family: var(--headline-font);
 }
 
 #newsletter {
@@ -224,7 +353,7 @@ footer {
     outline: none;
     border-radius: 3px 0px 0px 3px;
     color: #fff;
-    font-size: 17px;
+    font-size: 15px;
 
 }
 
@@ -242,7 +371,7 @@ footer {
     height: 50px;
     margin-left: -4px;
     border-radius: 0px 3px 3px 0px;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 footer hr {
@@ -295,13 +424,11 @@ footer h6 {
     .footer-sections {
         flex-direction: row;
         width: 100%;
-
-
         height: fit-content;
         margin: 30px 0px;
     }
 
-    .footer-sections a,
+    .footer-sections span,
     .footer-sections h3 {
         width: 150px;
         margin: auto;
@@ -318,7 +445,7 @@ footer h6 {
     }
 
     .footer-icon h2 {
-        font-size: 35px;
+        font-size: 32px;
     }
 
 
@@ -329,7 +456,7 @@ footer h6 {
         margin: 10px 0px;
     }
 
-    .footer-sections a,
+    .footer-sections span,
     .footer-sections h3 {
         width: 150px;
         margin-top: 20px;
@@ -342,24 +469,28 @@ footer h6 {
 
 @media only screen and (max-width:550px) {
     .footer-icon h2 {
-        font-size: 28px;
+        font-size: 23px;
     }
 
     .footer-icon p {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .footer-sections h3 {
-        font-size: 18px;
+        font-size: 14px;
     }
 
     .footer-container a {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     #newsletter h3,
     #newseletter form input::placeholder {
-        font-size: 18px;
+        font-size: 15px;
+    }
+
+    footer h6{
+        font-size: 12px;
     }
 
 }
