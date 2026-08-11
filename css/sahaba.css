@@ -1,0 +1,274 @@
+/* 
+:root {
+    --main-color: #114f41;
+    --main-1-color: #04392e;
+    --secondary-color: #C9A24B;
+    --secondary-1-color: #7e642c;
+    --tertiary-color: #2D3E35;
+    --neutral-color: #FBF8F2;
+    --neutral-0-color: #eae8e2;
+    --neutral-1-color:#e8e5de;
+    --neutral-2-color:#adaba6;
+    --balck-1-color: #212121;
+    --headline-font: "Inter", sans-serif;
+    --body-font: "Playfair Display", serif;
+    
+    }
+    */
+
+
+
+
+
+/* ! hero section start */
+
+.hero-sahaba {
+
+    background: linear-gradient(#efead7, var(--neutral-1-color));
+    padding: 30px 0px;
+}
+
+.hero-sahaba h2 {
+    text-align: center;
+    font-family: var(--headline-font);
+    color: var(--main-color);
+    font-size: 35px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 500;
+}
+
+.hero-sahaba p {
+    text-align: center;
+    width: calc(300px + (2 * 100% / 10));
+    line-height: 1.7;
+    font-size: 16px;
+    color: var(--balck-1-color);
+    letter-spacing: 1px;
+
+    margin: 20px auto;
+}
+
+.hero-sahaba hr {
+    margin: 10px auto;
+    width: 100px;
+    height: 3px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--secondary-1-color);
+}
+
+/* ? hero section end */
+
+
+/* ! main section start */
+
+/* ! sahaba cards section start */
+.sahaba-all {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 40px 20px;
+    background: linear-gradient(var(--neutral-1-color), #efead7);
+}
+
+
+.sahaba-card {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: var(--neutral-color);
+    margin: 10px 10px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    height: 500px;
+}
+
+.sahaba-main-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sahaba-main-info img {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.sahaba-names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sahaba-main-info h3 {
+    color: var(--main-color);
+    font-family: var(--headline-font);
+    text-align: center;
+}
+
+.sahaba-main-info h4 {
+    color: var(--secondary-1-color);
+    font-size: 14px;
+    text-align: center;
+}
+
+.sahaba-card p {
+    text-align: left;
+    margin: 10px auto;
+    line-height: 1.5;
+    color: var(--balck-1-color);
+    width: calc(100% - 40px);
+}
+
+.sahaba-card span {
+    width: 100%;
+    text-align: center;
+}
+
+.sahaba-card hr {
+    height: 2px;
+    border: none;
+    background-color: #0000002e;
+
+    width: 70%;
+    margin: 15px auto;
+
+}
+
+.sahaba-card a {
+    color: var(--main-1-color);
+    letter-spacing: 1px;
+    margin: auto;
+}
+
+.sahaba-card a:hover {
+    color: var(--secondary-1-color);
+}
+
+
+
+@media only screen and (max-width:920px) {
+    .sahaba-card {
+        height: 450px;
+        width: 300px;
+    }
+
+
+}
+
+@media only screen and (max-width:770px) {
+    .sahaba-card {
+        width: 90%;
+        height: fit-content;
+        align-items: start;
+    }
+
+    .sahaba-main-info {
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        justify-content: start;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .sahaba-main-info .sahaba-names {
+        margin-left: 30px;
+    }
+
+    .sahaba-main-info .sahaba-names h3 {
+        font-size: 22px;
+    }
+
+    .sahaba-main-info .sahaba-names h4 {
+        font-size: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width:500px) {
+
+
+    .sahaba-main-info {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .sahaba-main-info .sahaba-names {
+        margin-left: 0px;
+    }
+}
+
+/* ? sahaba cards section end */
+
+/* ! learn more section start */
+.learn-more-section {
+    background-image: url(../assets/imgs/learn.jpg);
+    background-position: right;
+    background-size: cover;
+    text-align: center;
+}
+
+.learn-more-cover {
+    background: linear-gradient(#01710a00, var(--main-color));
+    padding: 50px 20px;
+}
+
+.learn-more-section h3 {
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.learn-more-section p {
+    color: var(--neutral-color);
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    padding: 0px 100px;
+}
+
+.learn-more-section a {
+    margin-bottom: 20px;
+    outline: 1px solid var(--secondary-1-color);
+}
+
+.learn-more-section a.bun-sec:hover {
+    background-color: transparent;
+    outline-color: var(--neutral-color);
+}
+
+@media only screen and (max-width:700px) {
+    .learn-more-section p {
+        padding: 0px 10px;
+        
+    }
+}
+
+@media only screen and (max-width:550px) {
+    
+    .learn-more-section h3{
+        font-size: 25px;
+    }
+    
+    .learn-more-section p {
+        font-size: 14px;
+    }
+
+    .learn-more-section a{
+        font-size: 12px;
+    }
+}
+/* ? learn more section end */
+
+
+
+/* ? main section end */

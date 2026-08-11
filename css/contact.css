@@ -1,12 +1,12 @@
-/* ! title contact section start */
+/* ! hero contact section start */
 
-.title-contact {
+.hero-contact {
     text-align: center;
     padding: 20px 0px;
     margin-bottom: 20px;
 }
 
-.title-contact h2 {
+.hero-contact h2 {
     color: var(--main-color);
     font-size: 35px;
     font-family: var(--headline-font);
@@ -14,7 +14,7 @@
     letter-spacing: 2px;
 }
 
-.title-contact p {
+.hero-contact p {
     letter-spacing: 1px;
     word-spacing: 2px;
     color: var(--balck-1-color);
@@ -23,23 +23,23 @@
 }
 
 @media only screen and (max-width:880px) {
-    .title-contact p {
+    .hero-contact p {
         width: 70%;
     }
 }
 
 @media only screen and (max-width:650px) {
-    .title-contact p {
+    .hero-contact p {
         width: 80%;
         font-size: 14px;
     }
 
-    .title-contact h2 {
+    .hero-contact h2 {
         font-size: 30px;
     }
 }
 
-/* ? title contact section end */
+/* ? hero contact section end */
 
 
 /* ! form and reach section start */

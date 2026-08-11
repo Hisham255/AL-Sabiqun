@@ -542,6 +542,17 @@ header {
     }
 }
 
+@media only screen and (max-width:500px) {
+    
+    .explore-cards a {
+        width: 100%;
+    }
+    
+    .explore-cards article {
+        width: 90%;
+    }
+}
+
 /* ? explore section end */
 
 /* ? main section end */
