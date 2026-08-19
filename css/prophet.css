@@ -1,0 +1,332 @@
+:root {
+    --main-color: #114f41;
+    --main-1-color: #04392e;
+    --secondary-color: #C9A24B;
+    --secondary-1-color: #7e642c;
+    --tertiary-color: #2D3E35;
+    --secondary-neutral-color: #e6dcc7;
+    --neutral-color: #FBF8F2;
+    --neutral-0-color: #eae8e2;
+    --neutral-1-color: #e8e5de;
+    --neutral-2-color: #adaba6;
+    --balck-1-color: #212121;
+    --headline-font: "Inter", sans-serif;
+    --body-font: "Playfair Display", serif;
+
+}
+
+
+/* ! header section start */
+
+/* !hero section start */
+.hero-prophet {
+    background-color: var(--main-color);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.hero-prophet span {
+    color: var(--secondary-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.hero-prophet h2 {
+    color: var(--neutral-color);
+    letter-spacing: 1px;
+    font-family: var(--headline-font);
+    margin-bottom: 10px;
+    word-spacing: 3px;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.hero-prophet p {
+    margin-bottom: 50px;
+    width: 70%;
+    text-align: center;
+    color: var(--neutral-2-color);
+    letter-spacing: 0.8;
+    word-spacing: 2px;
+    line-height: 1.7;
+    font-size: 15px;
+
+}
+
+
+.hero-prophet-bun a {
+    margin: 10px;
+}
+
+.hero-prophet-bun a:nth-of-type(1):hover {
+    background-color: transparent;
+    outline: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.hero-prophet-bun a:nth-of-type(2):hover {
+    background-color: var(--secondary-1-color);
+    outline-width: 0px;
+    color: var(--neutral-color);
+}
+
+@media only screen and (max-width:600px) {
+    .hero-prophet span {
+        font-size: 25px;
+    }
+
+    .hero-prophet h2 {
+        font-size: 30px;
+    }
+
+    .hero-prophet p {
+        font-size: 14px;
+    }
+
+    .hero-prophet-bun a {
+        font-size: 13px;
+    }
+}
+
+/* ?hero section end */
+
+
+/* ? header section end */
+
+
+/* ! main section start */
+
+
+/* ! prophet info section start */
+.prophet-info-section {
+
+    background: linear-gradient(var(--neutral-color), var(--secondary-neutral-color), var(--neutral-1-color), var(--secondary-neutral-color), var(--neutral-color));
+    background-color: var(--neutral-color);
+    padding: 60px 0px;
+}
+
+.prophet-info-section h3 {
+    color: var(--main-1-color);
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 2px;
+    font-family: var(--headline-font);
+}
+
+.prophet-info-section>hr {
+    margin: 10px auto;
+    width: 100px;
+    background-color: var(--secondary-color);
+    border: none;
+    height: 5px;
+    margin-bottom: 30px;
+    border-radius: 3px;
+}
+
+
+
+
+
+
+.prophet-info-content {
+    width: calc(100% - 60px);
+    height: fit-content;
+
+    padding: 30px;
+}
+
+
+.prophet-info-content article {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.prophet-info-content article div.prophet-info-img {
+    height: 100%;
+    width: 40%;
+
+}
+
+.prophet-info-content article div.prophet-info-img .img-info {
+    display: block;
+    width: 100%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.466);
+}
+
+.prophet-info-content article div.prophet-info-img hr {
+    margin: 7px auto;
+    width: 200px;
+    background-color: var(--secondary-color);
+    border: none;
+    height: 3px;
+    border-radius: 5px;
+}
+
+.prophet-info-content article div.prophet-info-p {
+
+    height: 100%;
+    width: 40%;
+
+}
+
+
+.prophet-info-content article div.prophet-info-p h4 {
+    font-size: 20px;
+    font-family: var(--headline-font);
+    color: var(--main-1-color);
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.prophet-info-content article div.prophet-info-p p {
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+    color: var(--balck-1-color);
+
+}
+
+@media (max-width:1200px) {
+    .prophet-info-content article div.prophet-info-p h4 {
+        font-size: 18px;
+    }
+
+    .prophet-info-content article div.prophet-info-p p {
+        font-size: 14px;
+
+    }
+
+}
+
+@media (max-width:900px) {
+
+    .prophet-info-content article div.prophet-info-img {
+        width: 45%;
+    }
+
+    .prophet-info-content article div.prophet-info-p {
+        width: 45%;
+    }
+}
+
+
+@media (max-width:750px) {
+
+    .prophet-info-content article div.prophet-info-img {
+        width: 90%;
+    }
+
+    .prophet-info-content article div.prophet-info-p {
+        width: 90%;
+    }
+
+    .prophet-info-content article div.prophet-info-p h4{
+        margin-top: 10px;
+    }
+
+
+
+    .prophet-info-content article:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+
+    .prophet-info-content article:nth-of-type(odd) {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ? prophet info section end */
+
+/* ! Characteristics of Prophet section start  */
+.char-prophet-section {
+    background-color: var(--neutral-color);
+    padding-bottom: 30px;
+}
+
+.char-prophet-section h3 {
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--main-1-color);
+    font-family: var(--headline-font);
+    font-size: 28px;
+}
+
+.char-prophet-section p {
+    text-align: center;
+    letter-spacing: 1px;
+    color: var(--balck-1-color);
+    margin-top: 5px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.char-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.char-card article {
+    background-color: var(--neutral-1-color);
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 4px 25px rgba(0, 0, 0, 0.166);
+}
+
+
+.char-card article span {
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+.char-card article h6 {
+    color: var(--balck-1-color);
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--balck-1-color);
+}
+
+@media (max-width:600px) {
+    .char-prophet-section h3 {
+        font-size: 20px;
+    }
+
+    .char-prophet-section p {
+        font-size: 14px;
+    }
+
+    .char-card article span {
+        font-size: 20px;
+    }
+
+    .char-card article h6 {
+        font-size: 12px;
+    }
+}
+
+/* ? Characteristics of Prophet section end  */
+
+
+
+
+/* ? main section end */

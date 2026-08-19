@@ -65,10 +65,7 @@ header {
 
 
 .hero-r {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
     width: 40%;
     height: 610px;
     animation-duration: 1.3s;
@@ -78,6 +75,7 @@ header {
 
 .hero-r img {
     width: 80%;
+    height: 90%;
     border-radius: 30px;
     margin: 10px 0px;
 }
@@ -97,14 +95,12 @@ header {
     }
 
     .hero-r {
-        flex-direction: row;
         height: 300px;
-        justify-content: space-between;
     }
 
     .hero-r img {
-        width: 47%;
-        height: 200px;
+        width: 100%;
+        height: 300px;
     }
 
 }
@@ -132,17 +128,7 @@ header {
 
 
 
-    .hero-r {
-        flex-direction: column;
-        height: 500px;
-        justify-content: space-around;
-        margin-top: 20px;
-    }
 
-    .hero-r img {
-        width: 90%;
-        height: 200px;
-    }
 
 
 

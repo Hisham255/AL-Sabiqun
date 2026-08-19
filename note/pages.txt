@@ -2,18 +2,21 @@
 
 
 
+===> work on.
+-about us // the team information only.
+
+
+
 
 
 
 
 ===>unfinshed pages.
--about us
--sahaba & all sahaba
--the prophet
 -recourse & policy & terms (in one page : explore)
+
 -the navbar search (pop up section for the serach about any sahaba.) 
 
-
+-information 
 
 
 
@@ -21,9 +24,13 @@
 
 ===>finshed pages.
 -home
+
 -contact us
 -FAQ
     redirect it to contact (section FAQ).
+-sahaba 
+-all sahaba
+-the prophet
 
 
 
