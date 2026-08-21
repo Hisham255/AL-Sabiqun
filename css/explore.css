@@ -1,0 +1,126 @@
+/* ! main explore section start */
+
+.main-explore-section {
+
+    background-image: url(../assets/imgs/main1.jfif);
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ! hero explore section start */
+.hero-explore-section {
+    padding: 30px 20px;
+}
+
+.hero-explore-section h2 {
+    color: var(--main-1-color);
+    text-align: center;
+    font-size: clamp(20px, 3vw, 35px);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero-explore-section p {
+    width: 90%;
+    display: block;
+    margin: auto;
+    color: var(--tertiary-color);
+    letter-spacing: 0.4px;
+    line-height: 1.5;
+    font-size: clamp(14px, 3vw, 18px);
+    text-align: center;
+}
+
+.hero-explore-section hr {
+    margin: 30px auto 0px auto;
+    width: 200px;
+    height: 3px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--secondary-color);
+}
+
+/* ? hero explore section end */
+
+/* ! resources explore section start */
+.resources-section {
+    padding: 30px;
+}
+
+.resources-section h3 {
+    color: var(--main-1-color);
+    font-size: clamp(18px, 3vw, 25px);
+    letter-spacing: 1px;
+    font-family: var(--headline-font);
+    font-weight: 700;
+}
+
+.resources-section h4 {
+    color: var(--main-color);
+    font-size: clamp(16px, 3vw, 18px);
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.resources-section ul {
+    list-style-position: inside;
+}
+
+.resources-section ul li {
+    margin-bottom: 7px;
+    font-size: clamp(14px, 3vw, 16px);
+    color: var(--balck-1-color);
+}
+
+/* ? resources explore section end */
+
+/* ! tearms explore section start */
+.tearms-section {
+    padding: 30px;
+}
+
+.tearms-section h3 {
+    color: var(--main-1-color);
+    font-size: clamp(18px, 3vw, 25px);
+    letter-spacing: 1px;
+    font-family: var(--headline-font);
+    font-weight: 700;
+}
+
+.tearms-section p {
+    color: var(--tertiary-color);
+    font-size: clamp(16px, 3vw, 18px);
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.tearms-div{
+    margin-top: 20px;
+}
+
+.tearms-div h4{
+    color: var(--main-color);
+    font-size: clamp(16px, 3vw, 18px);
+    letter-spacing: 0.8px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.tearms-div ul {
+    list-style-position: inside;
+}
+
+.tearms-div ul li{
+    margin-bottom: 7px;
+    font-size: clamp(14px, 3vw, 16px);
+    color: var(--balck-1-color);
+}
+
+/* ? tearms explore section end */
+
+
+/* ? main explore section end */

@@ -1,0 +1,79 @@
+
+
+/* ! main section start */
+
+.main-information-section-cover{
+    padding-bottom: 30px;
+    
+    background-image: url(../assets/imgs/information\ background.jfif);
+    background-position: left;
+    background-size: cover;
+}
+
+/* ! main info sahaba section start */
+.main-info-section {
+    text-align: center;
+    padding: 30px 10px;
+}
+
+.main-info-section img {
+    min-width: 150px;
+    max-width: 400px;
+    width: 40%;
+}
+
+.main-info-section h3 {
+    font-family: var(--headline-font);
+    color: var(--main-1-color);    
+    font-size: clamp(20px, 3vw, 30px);
+    margin-top: 10px;
+    text-decoration: underline;
+}
+
+.main-info-section h4{
+    font-family: var(--headline-font);
+    color: var(--secondary-1-color);
+    font-size: clamp(13px, 3vw, 20px);
+    margin-top: 5px;
+    text-decoration: underline;
+}
+/* ? main info sahaba section end */
+
+
+
+
+
+
+/* ! sec info sahaba section start */
+.sec-info-section {
+    padding: 10px 30px;
+}
+
+.sec-info-section dl dt{
+    color: var(--main-1-color);
+    font-size: clamp(16px, 3vw, 20px);
+    font-family: var(--headline-font);
+    margin-top: 20px;   
+    letter-spacing: 1px; 
+}
+
+.sec-info-section dl dd{
+    color: var(--tertiary-color);
+    font-size: clamp(14px, 3vw, 16px);
+    margin-left: 30px;
+    
+}
+
+.sahaba-achievement li{
+    font-size: clamp(13px, 3vw, 16px);
+    color: var(--tertiary-color);
+    letter-spacing: 1px;
+}
+
+.sahaba-achievement{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+/* ? sec info sahaba section end */
+
+/* ? main section end */
